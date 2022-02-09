@@ -6,6 +6,8 @@ public class CompositionEx {
 		Heart prakashHeart = new Heart(4, true);
 		Brain prakashBrain = new Brain(87687, true);
 		
+		prakashHeart.setQuality(false);
+		
 		HumanBody prakash = new HumanBody("Prakash", 5.7, 67.82, prakashHeart, prakashBrain);
 		
 		String name = prakash.getName();
