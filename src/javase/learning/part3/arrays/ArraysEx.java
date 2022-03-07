@@ -48,5 +48,9 @@ public class ArraysEx {
 			System.out.println();
 		}
 		
+		System.out.println("------------------------");
+		
+		int[][][] arr3 = new int[3][3][3];
+		
 	}
 }
