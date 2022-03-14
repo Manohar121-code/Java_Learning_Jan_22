@@ -34,5 +34,17 @@ public class HashSetEx {
 		}
 		System.out.println("------------------");
 		
+		boolean contains = set.contains("java");
+		System.out.println(contains);
+		
+		boolean remove = set.remove("java");
+		System.out.println(remove);
+		
+		System.out.println("------------------");
+		
+		for (Object o : set) {
+			System.out.println(o);
+		}
+		System.out.println("------------------");
 	}
 }

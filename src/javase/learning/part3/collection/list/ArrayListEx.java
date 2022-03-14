@@ -3,6 +3,7 @@ package javase.learning.part3.collection.list;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
+import java.util.ListIterator;
 
 public class ArrayListEx {
 	public static void main(String[] args) {
@@ -95,6 +96,27 @@ public class ArrayListEx {
 		
 		List subList = list.subList(2, 5);
 		printList(subList);
+		
+		Iterator itr2 = list.iterator();
+		while (itr2.hasNext()) {
+			Object o = (Object) itr2.next();
+			System.out.println(o);
+		}
+		System.out.println("---------------");
+		
+		System.out.println("------------------LIST ITERATOR------------------");
+		System.out.println("**********FORWARD***********");
+		ListIterator listItr = list.listIterator();
+		while (listItr.hasNext()) {
+			Object o = (Object) listItr.next();
+			System.out.println(o);
+		}
+		
+		System.out.println("**********BACKWARD***********");
+		while (listItr.hasPrevious()) {
+			Object object = (Object) listItr.previous();
+			System.out.println(object);
+		}
 	}
 	
 	private static void printList(List list) {
