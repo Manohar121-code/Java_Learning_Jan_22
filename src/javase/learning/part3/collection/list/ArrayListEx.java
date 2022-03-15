@@ -105,6 +105,7 @@ public class ArrayListEx {
 		System.out.println("---------------");
 		
 		System.out.println("------------------LIST ITERATOR------------------");
+		list.add(2, null);
 		System.out.println("**********FORWARD***********");
 		ListIterator listItr = list.listIterator();
 		while (listItr.hasNext()) {
