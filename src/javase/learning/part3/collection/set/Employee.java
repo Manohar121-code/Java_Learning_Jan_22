@@ -1,6 +1,6 @@
 package javase.learning.part3.collection.set;
 
-public class Employee {
+public class Employee implements Comparable<Employee> {
 	private int id;
 	private String name;
 	private double salary;
@@ -67,6 +67,17 @@ public class Employee {
 	@Override
 	public String toString() {
 		return "Employee [id=" + id + ", name=" + name + ", salary=" + salary + "]";
+	}
+
+	@Override
+	public int compareTo(Employee e) {
+		if (this.getId() == e.getId()) {
+			return 0;
+		} else if (this.getId() > e.getId()) {
+			return 1;
+		} else {
+			return -1;
+		}
 	}
 
 }
