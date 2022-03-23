@@ -12,7 +12,7 @@ public class TryCatchEx {
 			int div = i/j;
 			System.out.println("division value - "+ div);
 			
-			String s = "java";
+			String s = null;
 			System.out.println("length is - "+ s.length());
 			
 			int[] arr = {1,2,3};
